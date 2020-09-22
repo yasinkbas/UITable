@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name             = 'UITable'
   s.version          = '0.1.0'
   s.summary          = 'A tiny dynamic table creator in swift'
-  s.description      = ""
+  s.description      = "Allows you to easily create tables with given dynamic values"
   s.homepage         = 'https://github.com/yasinkbas/UITable'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yasinkbas' => 'yasin.kbas12@gmail.com' }
