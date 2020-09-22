@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UITable_Example' do
+  pod 'UITable', :path => '../'
+
+  target 'UITable_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
