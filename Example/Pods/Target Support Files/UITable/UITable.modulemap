@@ -1,0 +1,6 @@
+framework module UITable {
+  umbrella header "UITable-umbrella.h"
+
+  export *
+  module * { export * }
+}

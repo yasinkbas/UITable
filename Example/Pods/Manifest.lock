@@ -1,0 +1,16 @@
+PODS:
+  - UITable (0.1.0)
+
+DEPENDENCIES:
+  - UITable (from `../`)
+
+EXTERNAL SOURCES:
+  UITable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UITable: b05644292dde8e328d0eb4ecd66087eefdcfa406
+
+PODFILE CHECKSUM: 96f36ade969ce2686fa02707488607119837714f
+
+COCOAPODS: 1.9.3
