@@ -145,11 +145,11 @@ class UITable: UIView {
         }
     }
     
-    private func setupHeaderTableCell(x: CGFloat, title: String, columnIndex: Int, rowIndex: Int, cellSize: CGSize) -> TableCell<UILabel> {
+    private func setupHeaderTableCell(x: CGFloat, title: String, columnIndex: Int, rowIndex: Int, cellSize: CGSize) -> UITableCell<UILabel> {
         let frame = CGRect(x: x, y: 0, width: cellSize.width, height: cellSize.height)
         let backgroundColor = columnIndex == highlightedColumnIndex ? highlightedColor : .clear
         let request = UITableCellRequest(isTopSeperatorEnabled: false, backgroundColor: backgroundColor, separatorColor: UIColor(cgColor: theme.borderColor))
-        let tableCell = TableCell<UILabel>(frame: frame, columnIndex: columnIndex, rowIndex: rowIndex, request: request) {
+        let tableCell = UITableCell<UILabel>(frame: frame, columnIndex: columnIndex, rowIndex: rowIndex, request: request) {
             let label = UILabel(style: UITableViewStyle.Label.tableHeaderLabelStyle)
             label.text = "\(title)"
             return label
@@ -158,7 +158,7 @@ class UITable: UIView {
         return tableCell
     }
     
-    private func setupContentTableCell(x: CGFloat, cellContent: UITableCellContent, columnIndex: Int, rowIndex: Int, cellSize: CGSize) -> TableCell<UIView> {
+    private func setupContentTableCell(x: CGFloat, cellContent: UITableCellContent, columnIndex: Int, rowIndex: Int, cellSize: CGSize) -> UITableCell<UIView> {
         let rowIndexPlus = titleRowWillAppear ? 1 : 0
         let frame = CGRect(
             x: x,
@@ -170,7 +170,7 @@ class UITable: UIView {
         let backgroundColor = columnIndex == highlightedColumnIndex ? highlightedColor : .clear
         let request = UITableCellRequest(isTopSeperatorEnabled: true, backgroundColor: backgroundColor, separatorColor: UIColor(cgColor: theme.borderColor))
         
-        let tableCell = TableCell(frame: frame, columnIndex: columnIndex, rowIndex: rowIndex, request: request) {
+        let tableCell = UITableCell(frame: frame, columnIndex: columnIndex, rowIndex: rowIndex, request: request) {
             var cellContentView: UIView
             switch cellContent {
             case let .label(text):
