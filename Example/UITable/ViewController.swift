@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    private func setupTable() {
+        
+    }
+    
+    private func dummyDataSource() {
+        
+    }
 
 }
 

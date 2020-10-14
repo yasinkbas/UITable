@@ -6,17 +6,17 @@
 //
 import Foundation
 
-typealias Columns = [UITableColumn]
+public typealias UITableColumns = [UITableColumn]
 
-class UITableRequest {
+public class UITableRequest {
     let theme: UITableThemeProvider
-    let columns: Columns
+    let columns: UITableColumns
     let columnWidths: [CGFloat]
     let highlightedColumnIndex: Int
     let superNavHeight: CGFloat?
     let titleRowWillAppear: Bool
     
-    init(theme: UITableThemeProvider, columns: Columns, columnWidths: [CGFloat], highlightedColumnIndex: Int, superNavHeight: CGFloat?, titleRowWillAppear: Bool) {
+    public init(theme: UITableThemeProvider, columns: UITableColumns, columnWidths: [CGFloat], highlightedColumnIndex: Int, superNavHeight: CGFloat?, titleRowWillAppear: Bool) {
         self.theme                      = theme
         self.columns                    = columns
         self.columnWidths               = columnWidths

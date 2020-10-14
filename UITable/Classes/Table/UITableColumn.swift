@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct UITableColumn {
+public struct UITableColumn {
     let title: String
     let values: [UITableCellContent]
     
-    init(title: String = "", values: [UITableCellContent]) {
+    public init(title: String = "", values: [UITableCellContent]) {
         self.title  = title
         self.values = values
     }
