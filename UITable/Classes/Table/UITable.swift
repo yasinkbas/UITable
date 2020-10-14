@@ -21,11 +21,11 @@ public class UITable: UIView {
     
     private let titleRowWillAppear: Bool
     
-    private var rowCount: CGFloat? {
+    public var rowCount: CGFloat? {
         columns.map { CGFloat($0.values.count + (titleRowWillAppear ? 1 : 0)) }.min()
     }
     
-    private var columnCount: CGFloat {
+    public var columnCount: CGFloat {
         CGFloat(columns.count)
     }
     
