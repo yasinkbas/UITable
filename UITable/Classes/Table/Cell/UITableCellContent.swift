@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum UITableCellContent {
+public enum UITableCellContent {
     case label(String)
     case imageView(UIImage)
     case tripleLIL(String, UIImage, String, Bool)

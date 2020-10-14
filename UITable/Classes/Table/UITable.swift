@@ -7,11 +7,11 @@
 
 import UIKit
 
-class UITable: UIView {
+public class UITable: UIView {
     
     private let theme: UITableThemeProvider
     
-    private var columns: Columns
+    private var columns: UITableColumns
     private var columnWidths: [CGFloat]
     private var superNavHeight: CGFloat?
     private var highlightedColumnIndex: Int
@@ -32,7 +32,7 @@ class UITable: UIView {
     private var highlightFrameStartAt: CGPoint?
     private var highlightFrameEndAt: CGPoint?
     
-    init(request: UITableRequest) {
+    public init(request: UITableRequest) {
         self.theme                  = request.theme
         self.columns                = request.columns
         self.columnWidths           = request.columnWidths
@@ -57,7 +57,7 @@ class UITable: UIView {
         layer.masksToBounds     = true
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         setupViews()
     }
