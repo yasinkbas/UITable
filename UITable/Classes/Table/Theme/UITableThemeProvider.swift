@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol UITableThemeProvider {
+public protocol UITableThemeProvider {
     var backgroundColor: UIColor        { get }
     var cornerRadius: CGFloat           { get }
     var borderColor: CGColor            { get }

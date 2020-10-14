@@ -219,11 +219,11 @@
 		C28E54CA2523CC6500C94E3D /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				C28E54CF2523CC6500C94E3D /* Cell */,
+				C28E54D62523CC6500C94E3D /* Theme */,
 				C28E54CB2523CC6500C94E3D /* UITableStyles.swift */,
 				C28E54CD2523CC6500C94E3D /* UITable.swift */,
 				C28E54CE2523CC6500C94E3D /* UITableRequest.swift */,
-				C28E54CF2523CC6500C94E3D /* Cell */,
-				C28E54D62523CC6500C94E3D /* Theme */,
 				C28E54DB2523CC6500C94E3D /* UITableColumn.swift */,
 			);
 			path = Table;
@@ -251,8 +251,8 @@
 		C28E54D62523CC6500C94E3D /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				C28E54D72523CC6500C94E3D /* UITableTheme.swift */,
 				C28E54D82523CC6500C94E3D /* Customs */,
+				C28E54D72523CC6500C94E3D /* UITableTheme.swift */,
 				C28E54DA2523CC6500C94E3D /* UITableThemeProvider.swift */,
 			);
 			path = Theme;
@@ -264,13 +264,6 @@
 				C28E54D92523CC6500C94E3D /* DefaultTableTheme.swift */,
 			);
 			path = Customs;
-			sourceTree = "<group>";
-		};
-		C28E54E92523CCCB00C94E3D /* External Modules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "External Modules";
 			sourceTree = "<group>";
 		};
 		C28E54FC2523D81E00C94E3D /* Style */ = {
@@ -303,7 +296,6 @@
 		CA47124F7237F515ECFDDD06C41B420C /* UITable */ = {
 			isa = PBXGroup;
 			children = (
-				C28E54E92523CCCB00C94E3D /* External Modules */,
 				C2168709251A727D00FCF0D7 /* Classes */,
 				B7BD7D034B5AB8A1A6BA190DDBC4BCB5 /* Pod */,
 				5C511DDC7B203167A88746C46E03D920 /* Support Files */,
@@ -453,6 +445,9 @@
 				LastUpgradeCheck = 1100;
 				TargetAttributes = {
 					3978123184AC93B211E25E7EC497812A = {
+						LastSwiftMigration = 1170;
+					};
+					75BF4E3E87D3AD9B5834392868F68E8D = {
 						LastSwiftMigration = 1170;
 					};
 				};
@@ -620,7 +615,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -878,7 +873,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
