@@ -7,11 +7,11 @@
 
 import UIKit
 
-public struct UITableViewStyle {
+struct UITableViewStyle {
     private init() { }
 }
 
-public extension UITableViewStyle {
+extension UITableViewStyle {
     enum Button {
     
     }

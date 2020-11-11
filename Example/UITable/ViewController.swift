@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
-        
+        scrollView.showsVerticalScrollIndicator = false
         return scrollView
     }()
     
@@ -52,14 +52,20 @@ class ViewController: UIViewController {
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             contentView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1)
         ])
-        
-        
-        
     }
     
     private func setupTable() {
         let theme = MyExampleTheme()
-        let table = UITable(request: .init(theme: theme, columns: pokemonDataSource(), columnWidths: [0.2, 0.4, 0.4], highlightedColumnIndex: -1, superNavHeight: nil, titleRowWillAppear: true))
+        let table = UITable(
+            request: .init(
+                theme: theme,
+                columns: pokemonDataSource(),
+                columnWidths: [0.2, 0.4, 0.4],
+                highlightedColumnIndex: -1,
+                superNavHeight: nil,
+                titleRowWillAppear: true
+            )
+        )
         scrollView.addSubview(table)
         table.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -118,7 +124,17 @@ class ViewController: UIViewController {
             ])
         ]
     }
+}
 
+extension ViewController {
+    final class MyExampleTheme: UITableTheme {
+        override var backgroundColor: UIColor { #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1) }
+        override var cornerRadius: CGFloat { 10 }
+        override var borderColor: CGColor { #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1) }
+        override var borderWidth: CGFloat { 1 }
+        override var highlightedColor: UIColor { #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1) }
+        override var highlightedBorderColor: UIColor { #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1) }
+    }
 }
 
 extension ViewController {

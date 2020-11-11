@@ -7,11 +7,11 @@
 
 import UIKit
 
-public protocol Stylable {
+protocol Stylable {
     init()
 }
 
-public extension Stylable {
+extension Stylable {
     init(style: UIStyle<Self>) {
         self.init()
         apply(style)
