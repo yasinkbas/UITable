@@ -7,11 +7,11 @@
 
 import Foundation
 
-public struct UIStyle<T> {
+struct UIStyle<T> {
     let apply: (T) -> Void
 }
 
-public extension UIStyle {
+extension UIStyle {
     func compose(with style: UIStyle<T>, configuration: @escaping (T) -> Void = { _ in }) -> UIStyle<T> {
         UIStyle<T> {
             self.apply($0)
