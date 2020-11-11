@@ -137,3 +137,14 @@ extension ViewController {
     }
 }
 
+extension ViewController {
+    struct MyExampleTheme: UITableThemeProvider {
+        var backgroundColor: UIColor { #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1) }
+        var cornerRadius: CGFloat { 10 }
+        var borderColor: CGColor { #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1) }
+        var borderWidth: CGFloat { 1 }
+        var highlightedColor: UIColor { #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1) }
+        var highlightedBorderColor: UIColor { #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1) }
+    }
+}
+
