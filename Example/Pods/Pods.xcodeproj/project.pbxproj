@@ -194,6 +194,8 @@
 			children = (
 				C28E54FC2523D81E00C94E3D /* Style */,
 				C28E54CA2523CC6500C94E3D /* Table */,
+				C28E54D62523CC6500C94E3D /* Theme */,
+				C28E54CF2523CC6500C94E3D /* Cell */,
 				C25250C6251E6D29007379DA /* Utilty */,
 			);
 			name = Classes;
@@ -219,8 +221,6 @@
 		C28E54CA2523CC6500C94E3D /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				C28E54CF2523CC6500C94E3D /* Cell */,
-				C28E54D62523CC6500C94E3D /* Theme */,
 				C28E54CB2523CC6500C94E3D /* UITableStyles.swift */,
 				C28E54CD2523CC6500C94E3D /* UITable.swift */,
 				C28E54CE2523CC6500C94E3D /* UITableRequest.swift */,
