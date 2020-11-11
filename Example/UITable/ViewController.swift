@@ -79,20 +79,7 @@ class ViewController: UIViewController {
     
     private func pokemonDataSource() -> UITableColumns {
         return [
-            .init(values: [
-                .label("1"),
-                .label("2"),
-                .label("3"),
-                .label("4"),
-                .label("5"),
-                .label("6"),
-                .label("7"),
-                .label("8"),
-                .label("9"),
-                .label("10"),
-                .label("11"),
-                .label("12")
-                ]
+            .init(values: Array(1...12).map { .label("\($0)") }
             ),
             .init(title: "Pokemon", values: [
                 .imageView(#imageLiteral(resourceName: "mewtwo")),
@@ -134,17 +121,6 @@ extension ViewController {
         override var borderWidth: CGFloat { 1 }
         override var highlightedColor: UIColor { #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1) }
         override var highlightedBorderColor: UIColor { #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1) }
-    }
-}
-
-extension ViewController {
-    struct MyExampleTheme: UITableThemeProvider {
-        var backgroundColor: UIColor { #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1) }
-        var cornerRadius: CGFloat { 10 }
-        var borderColor: CGColor { #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1) }
-        var borderWidth: CGFloat { 1 }
-        var highlightedColor: UIColor { #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1) }
-        var highlightedBorderColor: UIColor { #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1) }
     }
 }
 
